@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mumin's University of Science and Technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Mumin's University of Science and Technology</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#locations">Locations</a></li>
+                <li><a href="#tuition">Tuition Calculator</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <h2>Welcome to Mumin's University of Science and Technology</h2>
+        <p>At Mumin's University, we strive to provide the best education in Australia. Discover our innovative programs and take the first step toward your future!</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Mumin's University of Science and Technology was established in 2025 in the heart of Australia. We are determined to provide quality education to learners to the fullest. You are welcome to visit our campuses in Sydney.</p>
+    </section>
+
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <h3>Bachelor Degrees</h3>
+        <ul>
+            <li>Mechanical Engineering</li>
+            <li>IT</li>
+            <li>Electrical Engineering</li>
+            <li>Civil Engineering</li>
+            <li>Textile Engineering</li>
+            <li>Architecture</li>
+        </ul>
+        <h3>Master's Degrees</h3>
+        <ul>
+            <li>Mechanical Engineering</li>
+            <li>IT</li>
+            <li>Electrical Engineering</li>
+            <li>Civil Engineering</li>
+            <li>Textile Engineering</li>
+            <li>Architecture</li>
+        </ul>
+    </section>
+
+    <section id="locations">
+        <h2>Our Locations</h2>
+        <ul>
+            <li>Parramatta</li>
+            <li>Sydney CBD</li>
+        </ul>
+    </section>
+
+    <section id="tuition">
+        <h2>Tuition Fee Calculator</h2>
+        <form id="tuitionForm">
+            <label for="credits">Number of Credits:</label>
+            <input type="number" id="credits" name="credits" required>
+
+            <label for="courseType">Course Type:</label>
+            <select id="courseType" name="courseType">
+                <option value="undergraduate">Undergraduate</option>
+                <option value="postgraduate">Postgraduate</option>
+            </select>
+
+            <button type="button" onclick="calculateTuition()">Calculate Tuition</button>
+        </form>
+
+        <div id="result">
+            <p>Your tuition fee is: <span id="tuitionFee">$0</span></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mumin's University of Science and Technology. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
